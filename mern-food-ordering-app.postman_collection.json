@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "db365afb-4ea8-4199-98dc-1712081827e0",
+		"name": "mern-food-ordering-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "563571"
+	},
+	"item": [
+		{
+			"name": "POST /api/my/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"auth0Id\": \"42342453r34t\",\r\n    \"email\": \"testuser@test.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/my/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"my",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/my/user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlUxbWUzV2g3R3lUVUVSMjdxNG12eCJ9.eyJpc3MiOiJodHRwczovL2Rldi1ybHc2NXAxdG5qaTdrYjc2LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJTeDF3OXB3MjQ2MnhiZ3BodVRRd24xWHRCRWpOZzNkU0BjbGllbnRzIiwiYXVkIjoibWVybi1mb29kLW9yZGVyaW5nLWFwcC1hcGkiLCJpYXQiOjE3MDYxMDM4ODYsImV4cCI6MTcwNjE5MDI4NiwiYXpwIjoiU3gxdzlwdzI0NjJ4YmdwaHVUUXduMVh0QkVqTmczZFMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.FYGJR4ARjuj1Nu1M2Qr7U5XDBqm2lVl0t2EfYNsTIuVZfTgP2M-QuzDuMD1X1AmgcttImsQQEfnmbZLrHh2I-lX7o2eCUZnKp2cvO7CBe9tddRRAWLEbRC1zLYARjuYLOBDGt1X6JoM88UGihXabapdLjW2ofgd0jNCy8wIYDjeNy-SJ2mX3i_GVep67GbYycIWf__XkneDmxfneaSf6s4WOV_nFmM48FgSuONqLwQvLfysPRtTsmdXOI_iOgDNtbRcHOrguxEU2uOizd6jZramCGDml9PFnG4Yqwbrjm6Q8BoZaZx5a89zH8cZExbqcYCIM9LSJUqWo4jm1NRHE5w"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"asdasd\",\r\n    \"addressLine1\": \"asdasda\",\r\n    \"city\": \"asdasd\",\r\n    \"country\": \"asdasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/my/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"my",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/my/restaurant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InQxdXpZc2FwMlhidEptYkdSVHhTMCJ9.eyJpc3MiOiJodHRwczovL2Rldi1icHNiOHhnYi51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg1NjQ1MDUxNDU3MDAzNTY4NTgiLCJhdWQiOlsibWVybi1mb29kLW9yZGVyaW5nLWFwaSIsImh0dHBzOi8vZGV2LWJwc2I4eGdiLnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MDYyODU2OTMsImV4cCI6MTcwNjM3MjA5MywiYXpwIjoidUFJNzRMdDBxTjhuZG1kSE50a1pjc1dHQjVnRUJ3MzUiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.Y9VQpXdPAKQPi0ffRTffCnN3s233OY2WpWXAD7N-Mj45Jbs_DfSZ5URWDzhemLRE72ziTA4XP-pTQdIeCNtN0vvpvhpJhWnkCApQMM4tcRJlMvLAGN9gD6cCUxE13_veUIvS_RDbyiYJSl7rfNjqmNzsGpAWm7EvaSPQWD7i26Czcj_lSyfRFBVn7Ps6FGxj0RpcmPuQIG3NlyO-gVVE8R40HHfVHVj9TqvLnRly34FFZuU2O19LPqCcCkAc3w3rnF6rAP147AEtQr28cQyPwypP_dpbS5z0uOgnFcR-23oE_esjrRG0h8Q4ewcJKj7e1uT4nhE_ZPZBzRS6NsAp8w"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5175"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5175/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "restaurantName",
+							"value": "ASdasd",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "asdasd",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "deliveryPrice",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "estimatedDeliveryTime",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "cuisines[0]",
+							"value": "Desserts",
+							"type": "text"
+						},
+						{
+							"key": "cuisines[1]",
+							"value": "Pasta",
+							"type": "text"
+						},
+						{
+							"key": "cuisines[2]",
+							"value": "Italian",
+							"type": "text"
+						},
+						{
+							"key": "menuItems[0][name]",
+							"value": "Cheese Pizza",
+							"type": "text"
+						},
+						{
+							"key": "menuItems[0][price]",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "menuItems[1][name]",
+							"value": "Meat Pizza",
+							"type": "text"
+						},
+						{
+							"key": "menuItems[1][price]",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "menuItems[2][name]",
+							"value": "Veggie Pizza",
+							"type": "text"
+						},
+						{
+							"key": "menuItems[2][price]",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "imageFile",
+							"type": "file",
+							"src": "/C:/Users/Chris/Desktop/WhatsApp Image 2024-01-25 at 11.18.28_6ec09411.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/my/restaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"my",
+						"restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/restaurant/search/manchester ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/restaurant/search/manchester ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"restaurant",
+						"search",
+						"manchester "
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

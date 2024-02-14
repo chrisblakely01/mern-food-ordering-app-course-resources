@@ -1,0 +1,79 @@
+{
+	"console.log": {
+		"prefix": "clg",
+		"body": [
+			"console.log(\"$1\")",
+		],
+		"description": "useEffect function template"
+	},
+	"React Functional Component": {
+		"prefix": "rfc",
+		"body": [
+		  "const ${TM_FILENAME_BASE} = () => {",
+		  "  $1",
+		  "}",
+		  "",
+		  "export default ${TM_FILENAME_BASE};"
+		],
+		"description": "Create a React functional component"
+	},
+	"React Functional Component with Props": {
+		"prefix": "rfcp",
+		"body": [
+		  "type Props = {",
+		  "  $1",
+		  "}",
+		  "",
+		  "const ${TM_FILENAME_BASE} = ({$2}: Props) => {",
+		  "  $3",
+		  "}",
+		  "",
+		  "export default ${TM_FILENAME_BASE};"
+		],
+		"description": "Create a React functional component"
+	},
+	"useEffect Function": {
+		"prefix": "ue",
+		"body": [
+			"useEffect(() => {",
+			"\t$1",
+			"}, [$2])"
+		],
+		"description": "useEffect function template"
+	},
+	"useState with Type": {
+		"prefix": "us",
+		"body": [
+			"const [${1:stateName}, ${2:setStateName}] = useState<${3:Type}>($4);"
+		],
+		"description": "useState declaration with type in TypeScript"
+	},
+	"Handle Submit Function": {
+		"prefix": "hs",
+		"body": [
+		  "const handleSubmit = (event: FormEvent) => {",
+		  "\tevent.preventDefault();",
+		  "\t$0",
+		  "};"
+		],
+		"description": "Handle Submit function template for React"
+	},
+	"Async Function": {
+		"prefix": "afunc",
+		"body": [
+			"const ${1:functionName} = async (${2:params}) => {",
+			"\t$0",
+			"};"
+		],
+		"description": "Async function template"
+	},
+	"Function": {
+		"prefix": "func",
+		"body": [
+			"const ${1:functionName} = (${2:params}) => {",
+			"\t$0",
+			"};"
+		],
+		"description": "Async function template"
+	}
+}
