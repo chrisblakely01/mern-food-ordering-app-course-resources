@@ -1,1 +1,1 @@
-[Youtube Link!](https://www.youtube.com/watch?v=ardeKHEN1j4))
+[Youtube Link!](https://www.youtube.com/watch?v=ardeKHEN1j4)
